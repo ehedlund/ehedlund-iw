@@ -1,0 +1,1 @@
+parse_certs.sh takes as a command line argument the path to a PCAP input file to parse
