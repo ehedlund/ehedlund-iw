@@ -91,7 +91,7 @@ with open('extracted_certs.txt') as f:
 			first_block = True
 
 		# 'rdnSequence' denotes the beginning of issuer/subject information block within chain
-		elif (firstWord == "rdnSequence:"):
+		elif (firstWord == "issuer:" or firstWord == "subject:"):
 			# don't print empty line
 			if (first_block):
 				first_block = False
