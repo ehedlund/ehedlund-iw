@@ -11,7 +11,7 @@ with open('input/server_names.txt') as f:
 https_sites = list()
 non_https_sites = list()
 
-with open('input/final_sites.csv') as csv_file:
+with open('../final_sites.csv') as csv_file:
     csv_reader = csv.reader(csv_file)
     for row in csv_reader:
     	site = row[0]
