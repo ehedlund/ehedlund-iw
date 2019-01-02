@@ -36,4 +36,6 @@ with open('input/http_requests_output.csv') as f:
 
 				resources[request_url] = count + 1
 
-print(resources)
+with open('output/num_sites_per_resource.txt', 'w') as f:
+	for link, count in resources:
+	        f.write("%s\n" % item)
